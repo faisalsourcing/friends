@@ -1,0 +1,17 @@
+
+<tr>
+  <th scope="row"><%= friend.id %></th>
+  <td><%= friend.first_name %></td>
+  <td><%= friend.last_name %></td>
+  <td><%= friend.email %></td>
+  <td><%= friend.phone %></td>
+  <td><%= friend.twitter %></td>
+  <td> 
+    <p>
+      <%= link_to "View", friend %> | 
+      <%= link_to "Edit", edit_friend_path(friend) %> | 
+      <%= link_to "Delete", friend, method: :delete %>
+    </p>
+  </td>
+</tr>
+
